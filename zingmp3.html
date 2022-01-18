@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/icon_zing_mp3.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.7.0/font/bootstrap-icons.min.css" integrity="sha512-yLNTU6YQWEtsM/WVkUqd2jRzzq5hmfFUMVvziVlkgC0R9HTElDtyF4DiWiBeMS36npvN+NWwrr764A4AWGcmQQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Nhạc cá nhân | Xem bài hát, album, MV đang hot nhất hiện tại</title>
+</head>
+<body>
+    
+    <div class="app">
+        <div class="menu col-lg-2">
+            <div class="list-menu-sticky">
+                <div class="brand pt-3">
+                <a class="home-page">
+                    <img src="img/main-logo.svg" class="main-logo" alt="">
+                    <img src="img/small-logo.svg" class="small-logo d-none" alt="">
+                </a>
+                </div>
+                <ul class="list-menu-1">
+                <li class="menu-item active">
+                    <i class="bi bi-music-player"></i>
+                    <a class="menu-link">
+                    <p>Cá nhân</p>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <i class="bi bi-vinyl"></i>
+                    <a class="menu-link">
+                    <p>Khám phá</p>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <i class="bi bi-music-note-list"></i>
+                    <a class="menu-link">
+                    <p>#zingchart</p>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <i class="bi bi-soundwave"></i>
+                    <a class="menu-link d-flex align-items-center">
+                    <p>Radio</p>
+                    <span class="subnav-live text-uppercase ms-2">
+                        live
+                    </span>
+                    </a>
+                </li>
+                <li class="menu-item mb-2">
+                    <i class="bi bi-menu-button-wide"></i>
+                    <a class="menu-link">
+                    <p>Theo dõi</p>
+                    </a>
+                </li>
+                </ul>
+            </div>
+            <div class="menu-scroll">
+                <ul class="list-menu-2">
+                <li class="menu-item mt-3">
+                    <i class="bi bi-music-note-beamed"></i>
+                    <a class="menu-link">
+                    <p>Nhạc mới</p>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <i class="bi bi-layout-wtf"></i>
+                    <a class="menu-link">
+                    <p>Thể loại</p>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <i class="bi bi-star"></i>
+                    <a class="menu-link">
+                    <p>Top 100</p>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <i class="bi bi-tv"></i>
+                    <a class="menu-link">
+                    <p>MV</p>
+                    </a>
+                </li>
+                
+                </ul>
+                <div class="advertise">
+                <p>Nghe nhạc không quảng cáo cùng kho nhạc VIP</p>
+                <button class="btn-vip">
+                    <p class="text-uppercase mb-0">
+                    Nâng cấp vip
+                    </p>
+                </button>
+                </div>
+                <div class="library">
+                <div class="d-flex justify-content-between pt-2 pb-2 ms-4 me-4">
+                    <p class="">Thư viện</p>
+                    <i class="bi bi-pencil hide-on-tablet fs-12 flex-center"></i>
+                </div>
+                <ul>
+                    <li class="menu-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <a class="menu-link">
+                        <defs>
+                            <linearGradient id="0783s0j89a" x1="0%" x2="0%" y1="0%" y2="100%">
+                                <stop offset="0%" stop-color="#3CA2FF"></stop>
+                                <stop offset="100%" stop-color="#008FFF"></stop>
+                            </linearGradient>
+                            <linearGradient id="prx3tly02b" x1="21.839%" x2="21.839%" y1="43.679%" y2="100%">
+                                <stop offset="0%" stop-color="#FFF"></stop>
+                                <stop offset="100%" stop-color="#FFF" stop-opacity=".9"></stop>
+                            </linearGradient>
+                        </defs>
+                        <g fill="none" fill-rule="evenodd">
+                            <g>
+                                <g>
+                                    <path fill="url(#0783s0j89a)" d="M.516 7.143c.812-3.928 3.31-6.115 7.207-6.776 2.88-.489 5.762-.495 8.637.014 4.012.709 6.424 3.024 7.192 7.011.594 3.082.603 6.196-.009 9.274-.821 3.9-3.384 6.309-7.266 6.967-2.88.489-5.762.495-8.637-.014-4.012-.709-6.435-3.14-7.203-7.127-.624-3.102-.564-6.235.08-9.349z" transform="translate(-21 -433) translate(21 433)"></path>
+                                    <path fill="url(#prx3tly02b)" d="M3.995 9.479c-.245.48-.245 1.11-.245 2.371v3.3c0 1.26 0 1.89.245 2.371.216.424.56.768.984.984.48.245 1.11.245 2.371.245h9.3c1.26 0 1.89 0 2.372-.245.423-.216.767-.56.983-.983.245-.482.245-1.112.245-2.372v-3.3c0-1.26 0-1.89-.245-2.371-.216-.424-.56-.768-.983-.984-.482-.245-1.112-.245-2.372-.245h-9.3c-1.26 0-1.89 0-2.371.245-.424.216-.768.56-.984.984zm8.567.571l.06.004.068.015.057.02.017.008c.556.27 1.067.623 1.516 1.046.075.07.148.142.22.217.172.18.166.464-.014.636-.18.172-.464.167-.636-.013-.061-.063-.123-.125-.187-.185-.202-.19-.42-.365-.65-.521v3.442c0 1.025-.832 1.856-1.857 1.856S9.3 15.744 9.3 14.719c0-1.025.831-1.856 1.856-1.856.35 0 .677.096.957.264V10.5c0-.249.201-.45.45-.45z" transform="translate(-21 -433) translate(21 433)"></path>
+                                    <path fill="#FFF" fill-opacity=".6" fill-rule="nonzero" d="M7.5 5.25c0-.414.336-.75.75-.75h7.5c.414 0 .75.336.75.75h-9z" transform="translate(-21 -433) translate(21 433)"></path>
+                                    <path fill="#FFF" fill-opacity=".9" fill-rule="nonzero" d="M6 6.75c0-.414.336-.75.75-.75h10.5c.414 0 .75.336.75.75H6z" transform="translate(-21 -433) translate(21 433)"></path>
+                                </g>
+                            </g>
+                        </g>
+                        </a>
+                    </svg>
+                    <p class="p-12 fs-12">Cá nhân</p>
+                    </li>
+                    <li class="menu-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <a class="menu-link">
+                        <defs>
+                            <linearGradient id="ghd4ngt38a" x1="50%" x2="50%" y1="0%" y2="100%">
+                                <stop offset="0%" stop-color="#9FD465"></stop>
+                                <stop offset="100%" stop-color="#70B129"></stop>
+                            </linearGradient>
+                        </defs>
+                        <g fill="none" fill-rule="evenodd">
+                            <g>
+                                <g>
+                                    <path fill="url(#ghd4ngt38a)" d="M.516 7.143c.812-3.928 3.31-6.115 7.207-6.776 2.88-.489 5.762-.495 8.637.014 4.012.709 6.424 3.024 7.192 7.011.594 3.082.603 6.196-.009 9.274-.821 3.9-3.384 6.309-7.266 6.967-2.88.489-5.762.495-8.637-.014-4.012-.709-6.435-3.14-7.203-7.127-.624-3.102-.564-6.235.08-9.349z" transform="translate(-21 -467) translate(21 467)"></path>
+                                    <path stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13.5 11.5h5m-5 3h5M6 17.5h12.5" transform="translate(-21 -467) translate(21 467)"></path>
+                                    <path fill="#FFF" d="M10.786 4.025c-.053-.016-.11-.025-.167-.025-.316 0-.572.262-.572.585v4.782c-.532-.44-1.21-.704-1.948-.704C6.387 8.663 5 10.082 5 11.831 5 13.581 6.387 15 8.099 15c1.711 0 3.099-1.419 3.099-3.169 0-.074-.003-.147-.007-.22l.001-6.04c.534.336 1.033.728 1.49 1.169.114.109.225.22.334.337.218.233.58.24.808.017.228-.223.235-.593.017-.826-.123-.131-.247-.257-.375-.38-.766-.738-1.64-1.355-2.589-1.826l-.091-.037z" transform="translate(-21 -467) translate(21 467)"></path>
+                                </g>
+                            </g>
+                        </g>
+                        </a>
+                    </svg>
+                    <p class="p-12 fs-12">Playlist</p>
+                    </li>
+                    <li class="menu-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <a class="menu-link">
+                        <defs>
+                            <linearGradient id="v6mduhifwa" x1="50%" x2="50%" y1="0%" y2="100%">
+                                <stop offset="0%" stop-color="#FFD677"></stop>
+                                <stop offset="100%" stop-color="#F7AA45"></stop>
+                            </linearGradient>
+                            <linearGradient id="dkfkk30hhb" x1="21.205%" x2="21.205%" y1="43.042%" y2="100.632%">
+                                <stop offset="0%" stop-color="#FFF"></stop>
+                                <stop offset="100%" stop-color="#FFF" stop-opacity=".9"></stop>
+                            </linearGradient>
+                        </defs>
+                        <g fill="none" fill-rule="evenodd">
+                            <g>
+                                <g>
+                                    <path fill="url(#v6mduhifwa)" d="M.516 7.143c.812-3.928 3.31-6.115 7.207-6.776 2.88-.489 5.762-.495 8.637.014 4.012.709 6.424 3.024 7.192 7.011.594 3.082.603 6.196-.009 9.274-.821 3.9-3.384 6.309-7.266 6.967-2.88.489-5.762.495-8.637-.014-4.012-.709-6.435-3.14-7.203-7.127-.624-3.102-.564-6.235.08-9.349z" transform="translate(-21 -569) translate(21 569)"></path>
+                                    <path fill="url(#dkfkk30hhb)" d="M12 3.75c-4.556 0-8.25 3.694-8.25 8.25s3.694 8.25 8.25 8.25 8.25-3.694 8.25-8.25S16.556 3.75 12 3.75zm3.805 12.388c-.13.13-.301.195-.472.195-.17 0-.341-.065-.47-.195l-3.334-3.333c-.126-.125-.196-.294-.196-.472V8c0-.369.299-.667.667-.667.368 0 .667.298.667.667v4.057l3.138 3.138c.26.261.26.682 0 .943z" transform="translate(-21 -569) translate(21 569)"></path>
+                                </g>
+                            </g>
+                        </g>
+                        </a>
+                    </svg>
+                    <p class="p-12 fs-12">Gần đây</p>
+                    </li>
+                </ul>
+                </div>
+                <div class="my-playlist">
+                <p class="">Enghlish Music</p>
+                <p class="">Chinese Music</p>
+                <p class="">Koreanese Music</p>
+                <p class=" mb-2">Viet On Top Music</p>
+                </div>
+            </div>
+            <div class="create-playlist d-flex justify-content-between">
+                <p class="ms-4">Tạo playlist mới</p>
+                <i class="bi bi-plus-lg me-4"></i>
+            </div>
+        </div>
+        
+        <div class="header">
+            <div class="header-content d-flex align-items-center">
+                <div class="search d-flex align-items-center">
+                    <div class="arrow d-flex">
+                    <i class="bi bi-arrow-left"></i>
+                    <i class="bi bi-arrow-right"></i>
+                    </div>
+                    <div class="input-search d-flex align-items-center">
+                    <i class="bi bi-search header__search-icon"></i>
+                    <input type="search" placeholder="Nhập tên bài hát, nghệ sĩ hoặc MV...">
+                    <div class="history-search">
+                        <ul class="header__search-list">
+                        <li class="header__search-item">
+                            <i class="bi bi-search header__item-icon"></i>
+                            <a href="#" class="header__item-link">Simple love</a>
+                        </li>
+                        <li class="header__search-item">
+                            <i class="bi bi-search header__item-icon"></i>
+                            <a href="#" class="header__item-link">Bỏ em vào ba lô</a>
+                        </li>
+                        <li class="header__search-item">
+                            <i class="bi bi-search header__item-icon"></i>
+                            <a href="#" class="header__item-link">Đường tôi chở em về</a>
+                        </li>
+                        <li class="header__search-item">
+                            <i class="bi bi-search header__item-icon"></i>
+                            <a href="#" class="header__item-link">Love is gone</a>
+                        </li>
+                        <li class="header__search-item">
+                            <i class="bi bi-search header__item-icon"></i>
+                            <a href="#" class="header__item-link">At my worst</a>
+                        </li>
+                        <li class="header__search-item">
+                            <i class="bi bi-search header__item-icon"></i>
+                            <a href="#" class="header__item-link">Moon</a>
+                        </li>
+                    </ul>
+                    </div>
+                    </div>
+                </div>
+                <div class="menu-options d-flex align-items-center justify-content-between">
+                    <div class="mask-cost">
+                    <svg width="20" height="20" class="header__mask-icon" viewBox="0 0 20 20"><defs><linearGradient id="j32lhg93hd" x1="62.206%" x2="18.689%" y1="70.45%" y2="39.245%"><stop offset="0%" stop-color="#F81212"></stop><stop offset="100%" stop-color="red"></stop></linearGradient><linearGradient id="hjoavsus6g" x1="50%" x2="11.419%" y1="23.598%" y2="71.417%"><stop offset="0%" stop-color="#00F"></stop><stop offset="100%" stop-color="#0031FF"></stop></linearGradient><linearGradient id="la1y5u3dvi" x1="65.655%" x2="25.873%" y1="18.825%" y2="56.944%"><stop offset="0%" stop-color="#FFA600"></stop><stop offset="100%" stop-color="orange"></stop></linearGradient><linearGradient id="2dsmrlvdik" x1="24.964%" x2="63.407%" y1="8.849%" y2="55.625%"><stop offset="0%" stop-color="#13EFEC"></stop><stop offset="100%" stop-color="#00E8DF"></stop></linearGradient><filter id="4a7imk8mze" width="230%" height="230%" x="-65%" y="-65%" filterUnits="objectBoundingBox"><feGaussianBlur in="SourceGraphic" stdDeviation="3.9"></feGaussianBlur></filter><filter id="301mo6jeah" width="312.7%" height="312.7%" x="-106.4%" y="-106.4%" filterUnits="objectBoundingBox"><feGaussianBlur in="SourceGraphic" stdDeviation="3.9"></feGaussianBlur></filter><filter id="b2zvzgq7fj" width="295%" height="295%" x="-97.5%" y="-97.5%" filterUnits="objectBoundingBox"><feGaussianBlur in="SourceGraphic" stdDeviation="3.9"></feGaussianBlur></filter><filter id="a1wq161tvl" width="256%" height="256%" x="-78%" y="-78%" filterUnits="objectBoundingBox"><feGaussianBlur in="SourceGraphic" stdDeviation="3.9"></feGaussianBlur></filter><path id="qtpqrj1oda" d="M3.333 14.167V5.833l-1.666.834L0 3.333 3.333 0h3.334c.04 1.57.548 2.4 1.524 2.492l.142.008C9.403 2.478 9.958 1.645 10 0h3.333l3.334 3.333L15 6.667l-1.667-.834v8.334h-10z"></path><path id="jggzvnjgfc" d="M0 0H20V20H0z"></path><path id="2eiwxjmc7m" d="M3.333 14.167V5.833l-1.666.834L0 3.333 3.333 0h3.334c.04 1.57.548 2.4 1.524 2.492l.142.008C9.403 2.478 9.958 1.645 10 0h3.333l3.334 3.333L15 6.667l-1.667-.834v8.334h-10z"></path></defs><g fill="none" fill-rule="evenodd" transform="translate(2 3)"><mask id="tinejqaasb" fill="#fff"><use xlink:href="#qtpqrj1oda"></use></mask><use fill="#FFF" fill-opacity="0" xlink:href="#qtpqrj1oda"></use><g mask="url(#tinejqaasb)"><g transform="translate(-2 -3)"><mask id="uf3ckvfvpf" fill="#fff"><use xlink:href="#jggzvnjgfc"></use></mask><use fill="#D8D8D8" xlink:href="#jggzvnjgfc"></use><circle cx="8.9" cy="6.8" r="9" fill="url(#j32lhg93hd)" filter="url(#4a7imk8mze)" mask="url(#uf3ckvfvpf)"></circle><circle cx="9.3" cy="13.7" r="5.5" fill="url(#hjoavsus6g)" filter="url(#301mo6jeah)" mask="url(#uf3ckvfvpf)"></circle><circle cx="15.9" cy="6.9" r="6" fill="url(#la1y5u3dvi)" filter="url(#b2zvzgq7fj)" mask="url(#uf3ckvfvpf)"></circle><circle cx="16.4" cy="17.7" r="7.5" fill="url(#2dsmrlvdik)" filter="url(#a1wq161tvl)" mask="url(#uf3ckvfvpf)"></circle></g></g><use fill="#FFF" fill-opacity="0.05" xlink:href="#2eiwxjmc7m"></use></g></svg>
+                    </div>
+                    <div class="up-file">
+                        <input type="file" name="upload song" id="up-file-input" class="music__header-input">
+                        <label for="up-file-input" class="upload text-uppercase">
+                            <i class="bi bi-upload header__nav-icon"></i>
+                        </label>
+                    </div>
+                    <div class="setting">
+                        <i class="bi bi-gear header__nav-icon"></i>
+                        <div class="setting__menu">
+                            <div class="setting__nav">
+                                <div class="setting__item">
+                                    <div class="setting__item-content">
+                                        <i class="bi bi-shield-lock setting__item-icon"></i>
+                                        <span>Danh sách chặn</span>
+                                    </div>
+                                </div>
+                                <div class="setting__item">
+                                    <div class="setting__item-content">
+                                        <i class="bi bi-badge-hd setting__item-icon"></i>
+                                        <span>Chất lượng nhạc</span>
+                                    </div>
+                                    <i class="bi bi-chevron-right setting__item-icon"></i>
+                                </div>
+                                <div class="setting__item">
+                                    <div class="setting__item-content">
+                                        <i class="bi bi-play-circle setting__item-icon"></i>
+                                        <span>Trình phát nhạc</span>
+                                    </div>
+                                    <i class="bi bi-chevron-right setting__item-icon"></i>
+                                </div>
+                            </div>
+                            <div class="setting__subnav">
+                                <div class="setting__item">
+                                    <div class="setting__item-content">
+                                        <i class="bi bi-exclamation-circle setting__item-icon"></i>
+                                        <span>Giới thiệu</span>
+                                    </div>
+                                </div>
+                                <div class="setting__item">
+                                    <div class="setting__item-content">
+                                        <i class="bi bi-flag setting__item-icon"></i>
+                                        <span>Góp ý</span>
+                                    </div>
+                                </div>
+                                <div class="setting__item">
+                                    <div class="setting__item-content">
+                                        <i class="bi bi-telephone setting__item-icon"></i>
+                                        <span>Liên hệ</span>
+                                    </div>
+                                </div>
+                                <div class="setting__item">
+                                    <div class="setting__item-content">
+                                        <i class="bi bi-badge-ad setting__item-icon"></i>
+                                        <span>Quảng cáo</span>
+                                    </div>
+                                </div>
+                                <div class="setting__item">
+                                    <div class="setting__item-content">
+                                        <i class="bi bi-file-text setting__item-icon"></i>
+                                        <span>Thỏa thuận sử dụng</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user">
+                    <img src="img/avatar-user.jpg" alt="" class="avatar-user">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Tab Individual -->
+        <div class="content col-lg-10">
+            <div class="individual-user">
+                <!-- Header -->
+                <div class="header-individual-user d-flex justify-content-center align-items-center flex-column position-relative">
+                    <img src="img/artists/artist1.jpg" alt="" class="individual-avatar-user">
+                    <h1 class="individual-user-name">Việt Vui Vẻ</h1>
+                    <div class="individual-user-option border-none d-flex align-items-center">
+                    <button class="buy-vip user-option-btn">
+                        Mua vip ngay
+                    </button>
+                    <button class="button code-vip user-option-btn">
+                        Nhập code vip
+                    </button>
+                    <div class="option-logout position-relative">
+                        <i class="bi bi-three-dots option-logout-icon"></i>
+                        <div class="subnav-tooltip d-none">
+                            <p class="tooltip-logout">Khác</p>
+                            <div class="sub-tooltip"></div>
+                        </div>
+                        <div class="option__log-out">
+                            <i class="bi bi-box-arrow-right log-out__icon"></i>
+                            <span>Đăng xuất</span>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- Menu -->
+                <div class="individual-user-menu d-flex justify-content-center">
+                    <ul class="individual-user-list d-flex justify-content-center align-items-center">
+                    <li class="individual-user-item active">
+                        <span>Tổng quan</span>
+                    </li>
+                    <li class="individual-user-item">
+                        <span>Bài hát</span>
+                    </li>
+                    <li class="individual-user-item">
+                        <span>Playlist</span>
+                    </li>
+                    <li class="individual-user-item hide-on-mobile">
+                        <span>Album</span>
+                    </li>
+                    <li class="individual-user-item">
+                        <span>MV</span>
+                    </li>
+                    <li class="individual-user-item hide-on-mobile">
+                        <span>Nghệ sĩ</span>
+                    </li>
+                    <li class="individual-user-item hide-on-tablet-mobile">
+                        <span>Tải lên</span>
+                    </li>
+                    </ul>
+                </div>
+
+                <div class="content-individual-containner tab-home d-none active-individual">
+                    <!-- Song -->
+                    <div class="individual-music mb-50">
+                        <div class="individual-music-header d-flex justify-content-between align-items-center mb-10">
+                            <a href="#" class="individual-title d-flex align-items-center">
+                            <h3 class="m-0">Bài hát</h3>
+                            <i class="bi bi-chevron-right music__header-icon"></i>
+                            </a>
+                            <h3 class="individual-header-subtitle">Bài hát</h3>
+                            <div class="individual-music-btn d-flex align-items-center">
+                            <div class="btn-upload-song">
+                                <input type="file" name="upload song" id="music__upload-input" class="music__header-input">
+                                <label for="music__upload-input" class="upload text-uppercase">
+                                <i class="bi bi-upload me-2"></i>
+                                tải lên
+                                </label>
+                            </div>
+                            <button class="btn-play-all text-uppercase">
+                                <i class="bi bi-play-fill container__header-icon"></i>
+                                phát tất cả
+                            </button>
+                            </div>
+                        </div>             
+                        <div class="container__individual-music d-flex align-items-center">
+                            <div class="container__slide d-flex align-items-center hide-on-mobile">
+                                <div class="container__slide-show d-flex align-items-center">
+                                    <div class="container__slide-item first">
+                                        <div style="background: url('img/slides/slide1.jfif') no-repeat center center / cover" class="container__slide-img"></div>
+                                    </div>
+                                    <div class="container__slide-item second">
+                                        <div style="background: url('img/slides/slide2.jpg') no-repeat center center / cover" class="container__slide-img"></div>
+                                    </div>
+                                    <div class="container__slide-item third">
+                                        <div style="background: url('img/slides/slide3.jpg') no-repeat center center / cover" class="container__slide-img"></div>
+                                    </div>
+                                    <div class="container__slide-item fourth">
+                                        <div style="background: url('img/slides/slide4.jpg') no-repeat center center / cover" class="container__slide-img"></div>
+                                    </div>
+                                    <div class="container__slide-item fourth">
+                                        <div style="background: url('img/slides/slide5.jpg') no-repeat center center / cover" class="container__slide-img"></div>
+                                    </div>
+                                    <div class="container__slide-item fourth">
+                                        <div style="background: url('img/slides/slide6.jfif') no-repeat center center / cover" class="container__slide-img"></div>
+                                    </div>
+                                    <div class="container__slide-item fourth">
+                                        <div style="background: url('img/slides/slide7.jpg') no-repeat center center / cover" class="container__slide-img"></div>
+                                    </div>
+                                    <div class="container__slide-item fourth">
+                                        <div style="background: url('img/slides/slide8.jpg') no-repeat center center / cover" class="container__slide-img"></div>
+                                    </div>
+                                    <div class="container__slide-item fourth">
+                                        <div style="background: url('img/slides/slide9.jpg') no-repeat center center / cover" class="container__slide-img"></div>
+                                    </div>
+                                    <div class="container__slide-item fourth">
+                                        <div style="background: url('img/slides/slide10.jpg') no-repeat center center / cover" class="container__slide-img"></div>
+                                    </div>
+                                    <div class="container__slide-item fourth">
+                                        <div style="background: url('img/slides/slide11.jpeg') no-repeat center center / cover" class="container__slide-img"></div>
+                                    </div>
+                                    <div class="container__slide-item fourth">
+                                        <div style="background: url('img/slides/slide12.jpg') no-repeat center center / cover" class="container__slide-img"></div>
+                                    </div>
+                                    <div class="container__slide-item fourth">
+                                        <div style="background: url('img/slides/slide13.jpg') no-repeat center center / cover" class="container__slide-img"></div>
+                                    </div>
+                                    <div class="container__slide-item fourth">
+                                        <div style="background: url('img/slides/slide14.jpg') no-repeat center center / cover" class="container__slide-img"></div>
+                                    </div>
+                                    <div class="container__slide-item fourth">
+                                        <div style="background: url('img/slides/slide15.jpg') no-repeat center center / cover" class="container__slide-img"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        <div class="container__playlist col-lg-8">
+                            <div class="playlist__list">
+                                
+                            </div>
+                        </div>
+                        </div>              
+                    </div>
+
+                    <!-- Playlist -->
+                    <div class="individual-playlist mb-50">
+                        <div class="individual-playlist-header d-flex justify-content-between align-items-center mb-10">
+                            <a href="#" class="individual-title d-flex align-items-center">
+                            <h3 class="m-0">Playlist</h3>
+                            <i class="bi bi-chevron-right music__header-icon"></i>
+                            </a>
+                            <h3 class="individual-header-subtitle">Bài hát</h3>
+                            <div class="individual-playlist-btn d-flex align-items-center">
+                                <div class="move-btn-playlist move-btn button--disabled">
+                                    <i class="bi bi-chevron-left container__move-btn-icon"></i>
+                                </div>
+                                <div class="move-btn-playlist move-btn">
+                                    <i class="bi bi-chevron-right container__move-btn-icon"></i>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="container__individual-playlist d-flex align-items-center">
+                                <div class="d-flex playlist-box no-wrap w-100 h-100">
+                                    
+                                </div>
+                            
+                        </div>
+                    </div>
+
+                    <!-- Albums -->
+                    <div class="individual-albums mb-50">
+                        <div class="individual-albums-header d-flex justify-content-between align-items-center mb-10">
+                            <a href="#" class="individual-title d-flex align-items-center">
+                            <h3 class="m-0">Album</h3>
+                            <i class="bi bi-chevron-right music__header-icon"></i>
+                            </a>
+                            <h3 class="individual-header-subtitle">Album</h3>
+                            <div class="individual-playlist-btn d-flex align-items-center">
+                                <div class="move-btn-album move-btn button--disabled">
+                                    <i class="bi bi-chevron-left container__move-btn-icon"></i>
+                                </div>
+                                <div class="move-btn-album move-btn">
+                                    <i class="bi bi-chevron-right container__move-btn-icon"></i>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="container__individual-albums d-flex align-items-center">
+                            <div class="d-flex album-box no-wrap w-100">
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- MV -->
+                    <div class="individual-mv mb-50">
+                        <div class="individual-mv-header d-flex justify-content-between align-items-center mb-10">
+                            <a href="#" class="individual-title d-flex align-items-center">
+                            <h3 class="m-0">MV</h3>
+                            <i class="bi bi-chevron-right music__header-icon"></i>
+                            </a>
+                            <h3 class="individual-header-subtitle">MV</h3>
+                            <div class="individual-playlist-btn d-flex align-items-center">
+                                <div class="move-btn-mv move-btn button--disabled">
+                                    <i class="bi bi-chevron-left container__move-btn-icon"></i>
+                                </div>
+                                <div class="move-btn-mv move-btn">
+                                    <i class="bi bi-chevron-right container__move-btn-icon"></i>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="container__individual-mv d-flex align-items-center">
+                            <div class="d-flex mv-box no-wrap w-100">
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Artists -->
+                    <div class="individual-artists">
+                        <div class="individual-artists-header d-flex justify-content-between align-items-center mb-10">
+                            <a href="#" class="individual-title d-flex align-items-center">
+                            <h3 class="m-0">Nghệ sĩ</h3>
+                            <i class="bi bi-chevron-right music__header-icon"></i>
+                            </a>
+                            <h3 class="individual-header-subtitle">Nghệ sĩ</h3>
+                            <div class="individual-playlist-btn d-flex align-items-center">
+                                <div class="move-btn-artist move-btn button--disabled">
+                                    <i class="bi bi-chevron-left container__move-btn-icon"></i>
+                                </div>
+                                <div class="move-btn-artist move-btn">
+                                    <i class="bi bi-chevron-right container__move-btn-icon"></i>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="container__individual-artists d-flex align-items-center">
+                            <div class="d-flex artist-box no-wrap w-100">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab song section -->
+                <div class="content-individual-containner tab-song d-none">
+                    <div class="individual-music mb-50">
+                        <div class="individual-music-header d-flex justify-content-between align-items-center mb-10">
+                            <a href="#" class="individual-title d-flex align-items-center">
+                            <h3 class="m-0">Bài hát</h3>
+                            </a>
+                            <h3 class="individual-header-subtitle">Bài hát</h3>
+                            <div class="individual-music-btn d-flex align-items-center">
+                            <div class="btn-upload-song">
+                                <input type="file" name="upload song" id="music__upload-input" class="music__header-input">
+                                <label for="music__upload-input" class="upload text-uppercase">
+                                <i class="bi bi-upload me-2"></i>
+                                tải lên
+                                </label>
+                            </div>
+                            <button class="btn-open-all text-uppercase">
+                                <i class="bi bi-play-fill container__header-icon"></i>
+                                phát tất cả
+                            </button>
+                            </div>
+                        </div> 
+                        <div class="playlist__header">
+                            <span class="playlist__header-title">Bài hát</span>
+                            <span class="playlist__header-time">Thời gian</span>
+                        </div>            
+                        <div class="container__individual-music tab-song d-flex align-items-center pb-25">
+                            <div class="container__playlist col-lg-8 ms-0">
+                                <div class="playlist__list">
+                                    
+                                </div>
+                            </div>
+                        </div>              
+                    </div>
+                </div>
+
+                <!-- Tab playlist section -->
+                <div class="content-individual-containner tab-playlist d-none">
+                    <div class="individual-playlist-header d-flex justify-content-between align-items-center mb-10">
+                        <a href="#" class="individual-title d-flex align-items-center">
+                            <h3 class="m-0">Playlist</h3>
+                        
+                        </a>
+                    </div> 
+                    <div class="container__individual-playlist d-flex align-items-center">
+                            <div class="d-flex playlist-box flex-wrap w-100 h-100">
+                                
+                            </div>
+                        
+                    </div>
+                </div>
+
+                <!-- Tab album section -->
+                <div class="content-individual-containner tab-album d-none">
+                    <div class="individual-albums mb-50">
+                        <div class="individual-albums-header d-flex justify-content-between align-items-center mb-10">
+                            <a href="#" class="individual-title d-flex align-items-center">
+                            <h3 class="m-0">Album</h3>
+                            </a>
+                            <h3 class="individual-header-subtitle">Album</h3>
+                        </div> 
+                        <div class="container__individual-albums d-flex align-items-center">
+                            <div class="d-flex album-box flex-wrap w-100">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tab mv section -->
+                <div class="content-individual-containner tab-mv d-none">
+                    <div class="individual-mv-header d-flex justify-content-between align-items-center mb-10">
+                        <a href="#" class="individual-title d-flex align-items-center">
+                            <h3 class="m-0">MV</h3>
+                        
+                        </a>
+                    </div> 
+                    <div class="container__individual-mv d-flex align-items-center">
+                        <div class="d-flex mv-box flex-wrap w-100">
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab artist section -->
+                <div class="content-individual-containner tab-artist d-none">
+                    <div class="individual-artists">
+                        <div class="individual-artists-header mb-10">
+                            <a href="#" class="individual-title d-flex align-items-center">
+                                <h3 class="m-0">Nghệ sĩ</h3>
+                            </a>
+                        </div> 
+                        <div class="container__individual-artists d-flex align-items-center">
+                            <div class="d-flex artist-box flex-wrap w-100">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Upload section -->
+                <div class="content-individual-containner tab-upload d-none mb-5">
+                    <div class="individual-upload">
+                        <div class="individual-upload-header mb-10">
+                            <a href="#" class="upload__header-title">
+                                <h3 class="">Danh Sách Tải Lên</h3>
+                            </a>
+                        </div>
+                        <div class="col l-12 m-12 c-12">
+                            <div class="box--no-content">
+                                <div class="no-content-image"></div>
+                                <span class="no-content-text">Không có bài hát tải lên</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="explore">
+                
+            </div>
+        </div>
+        <div class="player">
+            <div class="player-container d-flex align-items-center">
+                <div class="player__song-info d-flex align-items-center">
+                    <div class="media__left mr-10">
+                        <div class="player__song-thumb media__thumb note-1">
+                            <div class="thumb-img" style="background: url('img/songsImg/song1.jfif') center center / cover no-repeat;"></div>
+                            <svg fill="#fff" viewBox="0 0 512 512" class="thumb-note note-1">
+                                <path d="M470.38 1.51L150.41 96A32 32 0 0 0 128 126.51v261.41A139 139 0 0 0 96 384c-53 0-96 28.66-96 64s43 64 96 64 96-28.66 96-64V214.32l256-75v184.61a138.4 138.4 0 0 0-32-3.93c-53 0-96 28.66-96 64s43 64 96 64 96-28.65 96-64V32a32 32 0 0 0-41.62-30.49z"></path>
+                            </svg>
+                            <svg fill="#fff" viewBox="0 0 384 512" class="thumb-note note-2">
+                                <path d="M310.94 1.33l-96.53 28.51A32 32 0 0 0 192 60.34V360a148.76 148.76 0 0 0-48-8c-61.86 0-112 35.82-112 80s50.14 80 112 80 112-35.82 112-80V148.15l73-21.39a32 32 0 0 0 23-30.71V32a32 32 0 0 0-41.06-30.67z"></path>
+                            </svg>
+                            <svg fill="#fff" viewBox="0 0 512 512" class="thumb-note note-3">
+                                <path d="M470.38 1.51L150.41 96A32 32 0 0 0 128 126.51v261.41A139 139 0 0 0 96 384c-53 0-96 28.66-96 64s43 64 96 64 96-28.66 96-64V214.32l256-75v184.61a138.4 138.4 0 0 0-32-3.93c-53 0-96 28.66-96 64s43 64 96 64 96-28.65 96-64V32a32 32 0 0 0-41.62-30.49z"></path>
+                            </svg>
+                            <svg fill="#fff" viewBox="0 0 384 512" class="thumb-note note-4">
+                                <path d="M310.94 1.33l-96.53 28.51A32 32 0 0 0 192 60.34V360a148.76 148.76 0 0 0-48-8c-61.86 0-112 35.82-112 80s50.14 80 112 80 112-35.82 112-80V148.15l73-21.39a32 32 0 0 0 23-30.71V32a32 32 0 0 0-41.06-30.67z"></path>
+                            </svg>                                                                                                
+                        </div>
+                    </div>
+                    <div class="media-song-info">
+                        <div class="flex-grow-1">
+                            <div class="info-name-song">
+                                <div class="name-song-animate">
+                                    <div class="name-song">Love is Gone</div>
+                                    <div class="name-song">Love is Gone</div>
+                                </div>
+                            </div>
+                            <div class="info-author">
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media-options d-flex">
+                        <div class="player__song-btn option-btn p-0 btn--heart">
+                            <i class="btn--icon icon--heart bi bi-heart"></i>
+                        </div>
+                        <div class="player__song-btn option-btn p-0">
+                            <i class="btn--icon bi bi-three-dots"></i>
+                        </div>
+                    </div>
+                
+                </div>
+                <div class="player-control">
+                    <div class="player-control-btn d-flex align-items-center justify-content-center">
+                        <div class="control-btn btn-random is-small">
+                            <i class="bi bi-shuffle fs-16 lh-50"></i>
+                        </div>
+                        <div class="control-btn btn-prev">
+                            <i class="bi bi-skip-start-fill"></i>
+                        </div>
+                        <div class="control-btn btn-toggle-play btn--play-song is-medium">
+                            <i class="bi bi-pause icon-pause pause-icon "></i>
+                            <i class="bi bi-play-fill icon-play play-icon fs-24"></i>
+                        </div>
+                        <div class="control-btn btn-next">
+                            <i class="bi bi-skip-end-fill"></i>
+                        </div>
+                        <div class="control-btn btn-repeat is-small is-medium">
+                            <i class="bi bi-arrow-repeat fs-16 lh-50"></i>
+                        </div>
+                    </div>
+                    <div class="progress-block hide-on-mobile">
+                        <span class="tracktime">00:00</span>
+                        <input id="progress--main" class="progress" type="range" value="0" step="1" min="0" max="100">
+                        <div class="progress__track song--track">
+                            <div class="progress__track-update"></div>
+                        </div>
+                        <span class="durationtime"></span>
+                    </div>
+                    
+                </div>
+                <div class="player-options">
+                    <div class="player__options-container d-flex align-items-center justify-content-end">
+                        <i class="bi bi-camera-video btn--icon p-icon h-auto"></i>
+                        <i class="bi bi-mic btn--icon p-icon h-auto"></i>
+                        <div class="player__options-btn volume option-btn">
+                            <i class="bi bi-volume-up btn--icon"></i>
+                        </div>
+                    
+                        <div class="player__volume-progress">
+                            <input type="range" class="volume__range" value="100" step="1" min="0" max="100">
+                            <div class="progress__track volume--track">
+                                <div class="progress__track-update"></div>
+                            </div>
+                        </div>
+                        <div class="player__list-icon">
+                            <i class="bi bi-music-note-list"></i>
+                        </div>
+                    </div>
+                    <audio id="audio" src="audio/listSong1/song1.mp3"></audio>
+                </div>
+
+            </div>
+
+            <div class="player__popup" style="background-image: url(/./assets/img/themeBgs/listTheme2/theme2.jpg);">
+                <div class="player__popup-header">
+                    <div class="player__popup-logo">
+                        <img src="img/small-logo.svg" alt="Logo" class="player__logo-img">
+                    </div>
+                    <div class="player__popup-container">
+                        <ul class="player__popup-menu">
+                            <li class="player__popup-item active">
+                                <a href="#">Danh Sách Phát</a>
+                            </li>
+                            <li class="player__popup-item">
+                                <a href="#">Karaoke</a>
+                            </li>
+                            <li class="player__popup-item hide-on-mobile">
+                                <a href="#">Lời Bài Hát</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="player__popup-action">
+                        <ul class="popup__action-menu">
+                            <li class="popup__action-btn hide-on-tablet-mobile">
+                                <i class="bi bi-arrows-angle-expand popup__action-btn-icon"></i>
+                            </li>
+                            <li class="popup__action-btn hide-on-tablet-mobile">
+                                <i class="bi bi-gear popup__action-btn-icon"></i>
+                            </li>
+                            <li class="popup__action-btn btn--pop-down">
+                                <i class="bi bi-chevron-down popup__action-btn-icon"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="player__popup-cd-display">
+                    <div class="player__popup-cd-img" style="background: url(img/music/listSong1/song10.jpg) center center / cover no-repeat; will-change: transform, opacity;"></div>
+                </div>
+
+                <div class="player__popup-cd-info">
+                    <h4>Now playing</h4>
+                    <h2 class="is-twoline">Cứ Chill Thôi</h2>
+                    <h3>
+                        <a href="#" class="is-ghost">Chillies</a>, <a href="#" class="is-ghost">Suni Hạ Linh</a>, <a href="#" class="is-ghost">Rhymastic</a>
+                    </h3>
+                </div>
+
+                <div class="player__popup-footer" style="background-image: none;">
+                      
+                    <div class="player__container-song hide-on-mobile">
+                        <div class="player__song-info d-flex align-items-center">
+                            <div class="media__left mr-10">
+                                <div class="player__song-thumb media__thumb note-1">
+                                    <div class="thumb-img" style="background: url('img/songsImg/song1.jfif') center center / cover no-repeat;"></div>
+                                    <svg fill="#fff" viewBox="0 0 512 512" class="thumb-note note-1">
+                                        <path d="M470.38 1.51L150.41 96A32 32 0 0 0 128 126.51v261.41A139 139 0 0 0 96 384c-53 0-96 28.66-96 64s43 64 96 64 96-28.66 96-64V214.32l256-75v184.61a138.4 138.4 0 0 0-32-3.93c-53 0-96 28.66-96 64s43 64 96 64 96-28.65 96-64V32a32 32 0 0 0-41.62-30.49z"></path>
+                                    </svg>
+                                    <svg fill="#fff" viewBox="0 0 384 512" class="thumb-note note-2">
+                                        <path d="M310.94 1.33l-96.53 28.51A32 32 0 0 0 192 60.34V360a148.76 148.76 0 0 0-48-8c-61.86 0-112 35.82-112 80s50.14 80 112 80 112-35.82 112-80V148.15l73-21.39a32 32 0 0 0 23-30.71V32a32 32 0 0 0-41.06-30.67z"></path>
+                                    </svg>
+                                    <svg fill="#fff" viewBox="0 0 512 512" class="thumb-note note-3">
+                                        <path d="M470.38 1.51L150.41 96A32 32 0 0 0 128 126.51v261.41A139 139 0 0 0 96 384c-53 0-96 28.66-96 64s43 64 96 64 96-28.66 96-64V214.32l256-75v184.61a138.4 138.4 0 0 0-32-3.93c-53 0-96 28.66-96 64s43 64 96 64 96-28.65 96-64V32a32 32 0 0 0-41.62-30.49z"></path>
+                                    </svg>
+                                    <svg fill="#fff" viewBox="0 0 384 512" class="thumb-note note-4">
+                                        <path d="M310.94 1.33l-96.53 28.51A32 32 0 0 0 192 60.34V360a148.76 148.76 0 0 0-48-8c-61.86 0-112 35.82-112 80s50.14 80 112 80 112-35.82 112-80V148.15l73-21.39a32 32 0 0 0 23-30.71V32a32 32 0 0 0-41.06-30.67z"></path>
+                                    </svg>                                                                                                
+                                </div>
+                            </div>
+                            <div class="media-song-info">
+                                <div class="flex-grow-1">
+                                    <div class="info-name-song">
+                                        <div class="name-song-animate">
+                                            <div class="name-song">Love is Gone</div>
+                                            <div class="name-song">Love is Gone</div>
+                                        </div>
+                                    </div>
+                                    <div class="info-author">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="media-options d-flex">
+                                <div class="player__song-btn option-btn p-0 btn--heart">
+                                    <i class="btn--icon icon--heart bi bi-heart"></i>
+                                </div>
+                                <div class="player__song-btn option-btn p-0">
+                                    <i class="btn--icon bi bi-three-dots"></i>
+                                </div>
+                            </div>
+                        
+                        </div>
+                    </div>
+                    
+                    <div class="player-control">
+                        <div class="progress-block hide-on-mobile">
+                            <span class="tracktime">00:00</span>
+                            <input id="progress--main" class="progress" type="range" value="0" step="1" min="0" max="100">
+                            <div class="progress__track song--track">
+                                <div class="progress__track-update"></div>
+                            </div>
+                            <span class="durationtime"></span>
+                        </div>
+                        <div class="player-control-btn d-flex align-items-center justify-content-center">
+                            <div class="control-btn btn-random is-small">
+                                <i class="bi bi-shuffle fs-16 lh-50"></i>
+                            </div>
+                            <div class="control-btn btn-prev">
+                                <i class="bi bi-skip-start-fill"></i>
+                            </div>
+                            <div class="control-btn btn-toggle-play btn--play-song is-medium">
+                                <i class="bi bi-pause icon-pause pause-icon "></i>
+                                <i class="bi bi-play-fill icon-play play-icon fs-24"></i>
+                            </div>
+                            <div class="control-btn btn-next">
+                                <i class="bi bi-skip-end-fill"></i>
+                            </div>
+                            <div class="control-btn btn-repeat is-small is-medium">
+                                <i class="bi bi-arrow-repeat fs-16 lh-50"></i>
+                            </div>
+                        </div>
+        
+                    </div>
+
+                    <div class="player-options">
+                        <div class="player__options-container d-flex align-items-center justify-content-end">
+                            <i class="bi bi-camera-video btn--icon p-icon h-auto"></i>
+                            <i class="bi bi-mic btn--icon p-icon h-auto"></i>
+                            <div class="player__options-btn volume option-btn">
+                                <i class="bi bi-volume-up btn--icon"></i>
+                            </div>
+                        
+                            <div class="player__volume-progress">
+                                <input type="range" class="volume__range" value="100" step="1" min="0" max="100">
+                                <div class="progress__track volume--track">
+                                    <div class="progress__track-update"></div>
+                                </div>
+                            </div>
+                            <div class="player__list-icon">
+                                <i class="bi bi-music-note-list"></i>
+                            </div>
+                        </div>
+                        <audio id="audio" src="audio/listSong1/song1.mp3"></audio>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>  
+   
+    <!-- Themes -->
+    <div class="modal-theme">
+        <div class="modal-container">
+            <div class="modal__close-btn">
+                <i class="bi bi-x-lg close close__btn-icon fs-16"></i>
+            </div>
+            <div class="theme__header">
+                <h3 class="theme__header-title">Giao Diện</h3>
+            </div>
+            <div class="theme__content">
+                <div class="theme__container">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast -->
+    <div id="toast"></div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="js/themes.js"></script>
+    <script src="js/playlistSong.js"></script>
+    <script src="js/playlists.js"></script>
+    <script src="js/albums.js"></script>
+    <script src="js/mvs.js"></script>
+    <script src="js/artists.js"></script>
+    <script src="js/listThemes.js"></script>
+    <script src="js/toast.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
